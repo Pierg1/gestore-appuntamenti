@@ -1,0 +1,50 @@
+<form
+  (ngSubmit)="onSubmit()"
+  #appointmentForm="ngForm"
+  class="appointment-form"
+>
+  <mat-form-field appearance="fill">
+    <mat-label>Data e Ora</mat-label>
+    <input
+      matInput
+      [matDatepicker]="picker"
+      placeholder="Data e Ora"
+      [(ngModel)]="appointment.dateTime"
+      name="dateTime"
+    />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Cliente</mat-label>
+    <input matInput [(ngModel)]="appointment.customer" name="customer" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Indirizzo</mat-label>
+    <input matInput [(ngModel)]="appointment.address" name="address" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Città</mat-label>
+    <input matInput [(ngModel)]="appointment.city" name="city" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Costo</mat-label>
+    <input matInput type="number" [(ngModel)]="appointment.cost" name="cost" />
+  </mat-form-field>
+
+  <div class="button-group">
+    <button mat-raised-button color="primary" type="submit">Salva</button>
+    <button
+      mat-stroked-button
+      color="accent"
+      type="button"
+      (click)="goToHome()"
+    >
+      Torna alla Home
+    </button>
+  </div>
+</form>

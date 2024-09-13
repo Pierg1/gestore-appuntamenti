@@ -1,0 +1,58 @@
+// .appointments-container {
+//   width: 100%;
+//   padding: 16px;
+//   box-sizing: border-box;
+// }
+
+// .table-wrapper {
+//   overflow-x: auto;
+//   -webkit-overflow-scrolling: touch;
+//   /* Smooth scrolling on iOS */
+// }
+
+// .custom-table {
+//   width: 100%;
+//   border-collapse: collapse;
+// }
+
+// .custom-table th,
+// .custom-table td {
+//   padding: 8px;
+//   text-align: left;
+// }
+
+// .custom-table th {
+//   background-color: #f1f1f1;
+//   font-weight: bold;
+// }
+
+// @media (max-width: 600px) {
+
+//   .custom-table th,
+//   .custom-table td {
+//     font-size: 14px;
+//     white-space: nowrap;
+//   }
+
+//   .custom-table {
+//     display: block;
+//     width: 100%;
+//     overflow-x: auto;
+//     -webkit-overflow-scrolling: touch;
+//     /* Smooth scrolling on iOS */
+//   }
+
+//   .custom-table th,
+//   .custom-table td {
+//     display: block;
+//   }
+
+//   .custom-table th {
+//     position: -webkit-sticky;
+//     /* For iOS Safari */
+//     position: sticky;
+//     top: 0;
+//     background: #f1f1f1;
+//     z-index: 1;
+//   }
+// }
