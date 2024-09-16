@@ -16,7 +16,6 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   newAppointment(): void {
-    //navigate to the create page
     this.router.navigate(['/new-appointment']);
   }
 }
