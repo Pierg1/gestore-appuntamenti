@@ -9,39 +9,6 @@
       "cost": 501
     },
     {
-      "id": "518",
-      "dateTime": "2024-09-01T15:00:00",
-      "customer": "cecd",
-      "address": "dede",
-      "city": "ccc",
-      "cost": 10
-    },
-    {
-      "id": "9264",
-      "dateTime": "2024-09-01T22:00:00.000Z",
-      "customer": "c",
-      "address": "ninij",
-      "city": "",
-      "cost": "",
-      "date": "2024-09-29T22:00:00.000Z"
-    },
-    {
-      "id": "aab8",
-      "dateTime": "2024-09-23T22:00:00.000Z",
-      "customer": "ciao ",
-      "address": "44",
-      "city": "padovaAAA",
-      "cost": 44
-    },
-    {
-      "id": "3508",
-      "dateTime": "2024-09-12T22:00:00.000Z",
-      "customer": "",
-      "address": "",
-      "city": "",
-      "cost": ""
-    },
-    {
       "id": "d11d",
       "dateTime": "2024-09-23T22:00:00.000Z",
       "customer": "Mario",
