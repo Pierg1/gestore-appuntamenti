@@ -111,34 +111,25 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Pulsante "Salva" */
 button.save-btn {
   background-color: #1abc9c;
-  /* Verde acqua */
   color: white;
 }
 
 button.save-btn:hover {
   background-color: #16a085;
-  /* Verde acqua più scuro */
 }
 
-/* Pulsante "Torna alla Home" con bordi */
 button.cancel-btn {
   background-color: transparent;
   border: 2px solid #1abc9c;
-  /* Bordo verde acqua */
   color: #1abc9c;
-  /* Testo verde acqua */
 }
 
 button.cancel-btn:hover {
   background-color: rgba(26, 188, 156, 0.1);
-  /* Leggero sfondo al passaggio del mouse */
   color: #16a085;
-  /* Verde acqua più scuro */
   border-color: #16a085;
-  /* Bordo verde acqua più scuro */
 }
 
 @media (max-width: 768px) {

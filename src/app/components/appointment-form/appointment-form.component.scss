@@ -4,7 +4,6 @@
   margin-top: 20px;
 }
 
-/* Stili generali dei pulsanti */
 button {
   padding: 12px 24px;
   font-size: 16px;
@@ -14,10 +13,8 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Pulsante "Salva" */
 button.save-btn {
   background-color: #1abc9c;
-  /* Verde acqua */
   color: white;
 }
 
