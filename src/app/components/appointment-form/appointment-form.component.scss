@@ -1,0 +1,55 @@
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Stili generali dei pulsanti */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Pulsante "Salva" */
+button.save-btn {
+  background-color: #1abc9c;
+  /* Verde acqua */
+  color: white;
+}
+
+button.save-btn:hover {
+  background-color: #16a085;
+}
+
+button.cancel-btn {
+  background-color: transparent;
+  border: 2px solid #1abc9c;
+  color: #1abc9c;
+}
+
+button.cancel-btn:hover {
+  background-color: rgba(26, 188, 156, 0.1);
+  color: #16a085;
+  border-color: #16a085;
+}
+
+@media (max-width: 768px) {
+  .appointment-form {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}

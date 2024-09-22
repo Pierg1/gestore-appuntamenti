@@ -3,16 +3,46 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background-color: white;
+  background-color: #ecf0f1;
   padding: 24px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   max-width: 500px;
   margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
 }
 
 .mat-form-field {
   width: 100%;
+}
+
+.mat-form-field .mat-label {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.mat-form-field .mat-form-field-infix {
+  background-color: white;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.mat-form-field:hover .mat-form-field-infix {
+  border-color: #1abc9c;
+}
+
+.mat-form-field.mat-focused .mat-form-field-infix {
+  border-color: #1abc9c;
+}
+
+.mat-form-field.mat-focused .mat-label {
+  color: #1abc9c;
+}
+
+.mat-input-element {
+  color: #2c3e50;
 }
 
 .button-group {
@@ -24,4 +54,106 @@
 button {
   padding: 12px 24px;
   font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.save-btn {
+  background-color: #1abc9c;
+  color: white;
+}
+
+button.save-btn:hover {
+  background-color: #16a085;
+}
+
+button.cancel-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.cancel-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .appointment-form {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Stili generali dei pulsanti */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Pulsante "Salva" */
+button.save-btn {
+  background-color: #1abc9c;
+  /* Verde acqua */
+  color: white;
+}
+
+button.save-btn:hover {
+  background-color: #16a085;
+  /* Verde acqua più scuro */
+}
+
+/* Pulsante "Torna alla Home" con bordi */
+button.cancel-btn {
+  background-color: transparent;
+  border: 2px solid #1abc9c;
+  /* Bordo verde acqua */
+  color: #1abc9c;
+  /* Testo verde acqua */
+}
+
+button.cancel-btn:hover {
+  background-color: rgba(26, 188, 156, 0.1);
+  /* Leggero sfondo al passaggio del mouse */
+  color: #16a085;
+  /* Verde acqua più scuro */
+  border-color: #16a085;
+  /* Bordo verde acqua più scuro */
+}
+
+@media (max-width: 768px) {
+  .appointment-form {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
 }

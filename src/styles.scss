@@ -2,3 +2,21 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  stroke: #1abc9c !important;
+  /* Verde menta */
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  stroke-width: 2px;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #1abc9c !important;
+}
+
+::ng-deep .mat-input-element:focus {
+  border-color: #1abc9c !important;
+  box-shadow: 0 0 0 2px rgba(26, 188, 156, 0.4);
+}

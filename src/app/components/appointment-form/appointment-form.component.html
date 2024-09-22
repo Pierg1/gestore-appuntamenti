@@ -27,5 +27,15 @@
     <input matInput placeholder="Costo" formControlName="cost" type="number" />
   </mat-form-field>
 
-  <button mat-raised-button color="primary" type="submit">Salva</button>
+  <div class="button-group">
+    <button mat-raised-button class="save-btn" type="submit">Salva</button>
+    <button
+      mat-stroked-button
+      class="cancel-btn"
+      type="button"
+      (click)="goToHome()"
+    >
+      Torna alla Home
+    </button>
+  </div>
 </form>

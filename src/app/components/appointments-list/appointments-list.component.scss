@@ -1,0 +1,72 @@
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.custom-table th {
+  background-color: #2c3e50;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+Copy code .custom-table tr:nth-child(odd) td {
+  background-color: #f4f6f7;
+}
+
+.custom-table tr:nth-child(even) td {
+  background-color: #ecf0f1;
+}
+
+.custom-table tr:hover td {
+  background-color: #1abc9c;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+.custom-table tr:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.custom-table .mat-header-cell,
+.custom-table .mat-cell {
+  padding: 10px;
+}
+
+.custom-table .mat-header-row {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.custom-table .mat-raised-button {
+  background-color: #1abc9c;
+  color: white;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-table .mat-raised-button:hover {
+  background-color: #16a085;
+}
+
+.custom-table .mat-raised-button:last-child {
+  margin-right: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+

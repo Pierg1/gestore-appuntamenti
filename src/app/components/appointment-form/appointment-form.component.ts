@@ -49,4 +49,8 @@ export class AppointmentFormComponent {
         });
     }
   }
+
+  goToHome(): void {
+    this.router.navigate(['/']);
+  }
 }

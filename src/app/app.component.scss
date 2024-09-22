@@ -1,26 +1,124 @@
-.welcome-container {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #f0f0f0;
+/* Stili generali */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  background-color: #ecf0f1;
 }
 
-.content {
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  // min-height: 100vh;
+  // width: 100vw;
+  background: linear-gradient(to right, #ecf0f1, #bdc3c7);
+  padding: 0 20px;
+}
+
+.main-content {
   text-align: center;
-  background-color: white;
-  padding: 40px;
+  padding: 60px;
+  /* Aumentato il padding per più spazio */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  // max-width: 900px;
+  /* Aumentato max-width per più larghezza */
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  /* Blu scuro */
 }
 
 .welcome-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #1976d2;
+  font-size: 3rem;
+  /* Aumentato il font-size per più impatto */
+  margin-bottom: 40px;
+  /* Aumentato il margine per più spazio sotto il titolo */
+  color: #2c3e50;
+  /* Blu scuro */
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
-button {
-  font-size: 18px;
-  padding: 12px 24px;
+/* Stili per il contenitore dei pulsanti */
+.button-container {
+  text-align: center;
+  margin: 50px 0;
+  /* Aumentato il margine per più spazio attorno */
 }
+
+/* Pulsante Nuovo Appuntamento */
+.new-appointment-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #1abc9c;
+  /* Verde menta */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 16px 30px;
+  /* Aumentato il padding per pulsanti più spaziosi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.new-appointment-btn mat-icon {
+  margin-right: 10px;
+}
+
+.new-appointment-btn:hover {
+  background-color: #16a085;
+  /* Verde menta più scuro */
+  transform: scale(1.05);
+}
+
+.new-appointment-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(26, 188, 156, 0.4);
+  /* Verde menta trasparente */
+}
+
+/* Stile della tabella */
+.custom-table {
+  margin-top: 40px;
+  /* Aggiunto margine superiore per dare spazio tra il pulsante e la tabella */
+}
+
+/* Media Queries per la Responsività */
+
+/* Tablet e Dispositivi Mobili */
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 2.2rem;
+    /* Ridotto leggermente per tablet */
+  }
+
+  .new-appointment-btn {
+    font-size: 1rem;
+    padding: 14px 26px;
+  }
+}
+
+/* Smartphone e Dispositivi Molto Piccoli */
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 1.8rem;
+    /* Ridotto ulteriormente per smartphone */
+  }
+
+  .new-appointment-btn {
+    font-size: 0.9rem;
+    padding: 12px 22px;
+    width: 100%;
+  }
+
+  .custom-table {
+    margin-top: 30px;
+  }
+}
+
+
